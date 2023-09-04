@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Jira</title>
+  </head>
+  <body>
+    <h1 class="app-title">Jira App</h1>
+    <div class="drag-container">
+      <ul class="drag-list">
+        <!-- Todo -->
+        <li class="drag-column todo-column">
+          <span class="header">
+            <h1>Todo</h1>
+          </span>
+
+          <div id="todo-content">
+            <ul class="drag-item-list" id="todo-list" ondragover="allowDrop(event)" ondragenter="dragEnter(0)" ondrop="drop(event)"></ul>
+          </div>
+
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+
+          <div class="add-btn-group">
+            <div class="add-btn" onclick="showItemDiv(0)">
+              <span class="plus-span">+</span>
+            </div>
+            <div class="add-btn update" onclick="hideItemDiv(0)">
+              <span>Save</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- In Progress -->
+        <li class="drag-column progress-column">
+          <span class="header">
+            <h1>In Progress</h1>
+          </span>
+
+          <div id="progress-content">
+            <ul class="drag-item-list" id="progress-list" ondragover="allowDrop(event)" ondragenter="dragEnter(1)" ondrop="drop(event)"></ul>
+          </div>
+
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+
+          <div class="add-btn-group">
+            <div class="add-btn" onclick="showItemDiv(1)">
+              <span class="plus-span">+</span>
+            </div>
+            <div class="add-btn update" onclick="hideItemDiv(1)">
+              <span>Save</span>
+            </div>
+          </div>
+        </li>
+
+        <!-- Done -->
+        <li class="drag-column done-column">
+          <span class="header">
+            <h1>Done</h1>
+          </span>
+
+          <div id="done-content">
+            <ul class="drag-item-list" id="done-list" ondragover="allowDrop(event)" ondragenter="dragEnter(2)" ondrop="drop(event)"></ul>
+          </div>
+
+          <div class="add-container">
+            <div class="add-item" contenteditable="true"></div>
+          </div>
+
+          <div class="add-btn-group">
+            <div class="add-btn" onclick="showItemDiv(2)">
+              <span class="plus-span">+</span>
+            </div>
+            <div class="add-btn update" onclick="hideItemDiv(2)">
+              <span>Save</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

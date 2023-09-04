@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.app-title {
+  text-align: center;
+}
+
+.drag-list {
+  display: flex;
+}
+
+.drag-container {
+  margin: 20px;
+}
+
+.drag-column {
+  flex: 1;
+  margin: 0 10px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.drag-item {
+  background-color: black;
+  padding: 8px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.todo-column .header,
+.todo-column .update {
+  background-color: red;
+}
+
+.progress-column .header,
+.progress-column .update {
+  background-color: lightblue;
+}
+
+.done-column .header,
+.done-column .update {
+  background-color: lightgreen;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.header h1 {
+  font-size: 1.25rem;
+}
+
+.add-btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-btn {
+  background-color: coral;
+  padding: 5px 10px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.update {
+  display: none;
+}
+
+.plus-span {
+  font-size: 20px;
+}
+
+.add-container {
+  min-height: 100px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: none;
+}
+
+.add-item {
+  width: 100%;
+  min-height: 50px;
+  height: auto;
+  color: black;
+  margin: 5px auto;
+  padding: 8px;
+}
+
+.add-item:focus {
+  outline: none;
+}
