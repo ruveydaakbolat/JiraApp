@@ -26,9 +26,9 @@ function getSavedColumns() {
     progressListArray = JSON.parse(localStorage.getItem("progressItems"));
     doneListArray = JSON.parse(localStorage.getItem("doneItems"));
   } else {
-    todoListArray = ["React Entegrasyonu", "Angular Entegrasyonu"];
-    progressListArray = ["Sendgrid Entegrasyonu"];
-    doneListArray = ["Verimor Entegrasyonu"];
+    todoListArray = ["React Integration", "Angular Integration"];
+    progressListArray = ["Sendgrid Integration"];
+    doneListArray = ["Verimor Integration"];
   }
 }
 
